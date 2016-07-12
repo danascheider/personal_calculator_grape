@@ -1,0 +1,58 @@
+#%RAML 1.0
+---
+title: Personal Calculator
+baseUri: http://api.personalcalculator.com
+
+/age:
+  post:
+    description: Calculate age given a birthdate
+    headers:
+      Content-Type: application/json
+    body:
+      application/json:
+        schema: |
+          {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "required": [ "data" ],
+            "additionalProperties": false,
+            "properties": {
+              "data": {
+                "type": "object",
+                "required": [ "birthdate" ],
+                "properties": {
+                  "first_name": { "type": "string" },
+                  "last_name": { "type": "string" },
+                  "birthdate": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              }
+            }
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            schema: |
+              {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "additionalProperties": false,
+                "required": [ "request", "age" ],
+                "properties": {
+                  "request": {
+                    "type": "object",
+                    "properties": {
+                      "first_name": { "type": "string" },
+                      "last_name": { "type": "string" },
+                      "birthdate": {
+                        "type": "string",
+                        "format": "date-time"
+                      }
+                    }
+                  },
+                  "age": { "type": "integer" }
+                }
+              }
