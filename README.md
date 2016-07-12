@@ -1,2 +1,2 @@
-# personal_calculator_grape
-Another example REST API for Rambo
+# Personal Calculator Grape
+A [Grape](https://github.com/ruby-grape/grape) implementation of the Personal Calculator API I'm using to develop [Rambo](https://github.com/danascheider/rambo). Other implementations include [Rails 5](https://github.com/danascheider/personal_calculator), [Rails 4](https://github.com/danascheider/personal_calculator_rails_4), [Sinatra classic](https://github.com/danascheider/personal_calculator_sinatra), and [Sinatra Modular](https://github.com/danascheider/personal_calculator_sinatra_modular).
