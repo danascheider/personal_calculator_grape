@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [ "request", "age" ],
+  "properties": {
+    "request": {
+      "type": "object",
+      "properties": {
+        "first_name": { "type": "string" },
+        "last_name": { "type": "string" },
+        "birthdate": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "age": { "type": "integer" }
+  }
+}

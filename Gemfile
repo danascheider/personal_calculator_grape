@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "grape"
 gem "puma"
+gem "activesupport", "~> 5.0"
 
 group :development, :test do 
   gem "rake"

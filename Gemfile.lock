@@ -87,6 +87,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (~> 5.0)
   byebug
   grape
   puma
