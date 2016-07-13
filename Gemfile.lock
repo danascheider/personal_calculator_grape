@@ -51,7 +51,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (11.2.2)
-    rambo_ruby (0.5.0)
+    rambo_ruby (0.6.0)
       activesupport (>= 4.0)
       colorize (~> 0.7)
       json-schema (~> 2.6)
@@ -93,7 +93,7 @@ DEPENDENCIES
   puma
   rack-test (~> 0.6)
   rake
-  rambo_ruby (~> 0.5)
+  rambo_ruby (~> 0.6)
   rspec (~> 3.5)
 
 BUNDLED WITH
