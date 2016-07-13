@@ -16,7 +16,7 @@ module PersonalCalculator
     end
 
     desc "Get an age given a birthdate"
-    post :age do 
+    post :age do
       @request_body = JSON.parse(request.body.read)
 
       status 200

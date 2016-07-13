@@ -17,9 +17,10 @@ RSpec.describe "Personal Calculator", type: :rambo do
     describe "POST" do
       let(:headers) do 
         {
-          "CONTENT_TYPE" => "application/json"
+          "Content-Type" => "application/json"
         }
       end
+      
       let(:request_body) do
         File.read("spec/support/examples/age_post_request_body.json")
       end

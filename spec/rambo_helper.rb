@@ -6,7 +6,8 @@ module ApiHelper
   include Rack::Test::Methods
 
   def app
-    PersonalCalculator::API
+    require "active_support/core_ext/class/subclasses"
+    Grape::API.descendants.first
   end
 end
 
